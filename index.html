@@ -1,59 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Your Name | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Chakri — Full Stack Developer & UI/UX Designer crafting beautiful digital experiences.">
+  <title>Chakri | Full Stack Developer &amp; Designer</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>Chakri</h1>
-        <p>Web Developer | Designer | Creator</p>
-    </header>
+  <!-- Background Animation -->
+  <div class="bg-animation">
+    <div class="orb"></div>
+    <div class="orb"></div>
+    <div class="orb"></div>
+  </div>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Hello! I'm a passionate web developer who enjoys building clean 
-            and user-friendly websites. I love turning ideas into reality 
-            using code.
-        </p>
-    </section>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-logo">Chakri.</a>
+    <div class="nav-links" id="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="dot"></span>
+        Available for work
+      </div>
+      <p class="hero-greeting reveal reveal-delay-1">Hello, I'm</p>
+      <h1 class="reveal reveal-delay-2">
+        <span class="name-gradient">Chakri</span>
+      </h1>
+      <p class="hero-subtitle reveal reveal-delay-3">
+        <span class="typed-text"></span><span class="typed-cursor">|</span>
+      </p>
+      <p class="hero-desc reveal reveal-delay-4">
+        I build exceptional digital experiences that live at the intersection of design and technology. Focused on creating things that are both beautiful and functional.
+      </p>
+      <div class="hero-buttons reveal reveal-delay-4">
+        <a href="#projects" class="btn btn-primary">
+          View My Work <i data-lucide="arrow-right" style="width:18px;height:18px;"></i>
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          Get In Touch <i data-lucide="mail" style="width:18px;height:18px;"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
-        <div class="project-card">
-            <h3>Project One</h3>
-            <p>A simple website built using HTML and CSS.</p>
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">About Me</p>
+        <h2 class="section-title">Turning Ideas Into Reality</h2>
+        <p class="section-desc">A passionate developer who loves building digital products that make a difference.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal">
+          <div class="about-image">
+            <div class="about-image-placeholder">👨‍💻</div>
+          </div>
+          <div class="about-image-decoration"></div>
         </div>
-
-        <div class="project-card">
-            <h3>Project Two</h3>
-            <p>A responsive landing page design.</p>
+        <div class="about-text">
+          <h3 class="reveal">A Developer Who Cares About Quality</h3>
+          <p class="reveal">
+            I'm a full stack developer with a passion for creating elegant solutions to complex problems. With a strong foundation in both front-end and back-end technologies, I build applications that not only work flawlessly but also provide exceptional user experiences.
+          </p>
+          <p class="reveal">
+            When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or designing user interfaces that push the boundaries of what's possible on the web.
+          </p>
+          <div class="about-stats reveal">
+            <div class="stat-item">
+              <div class="stat-number">3+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">20+</div>
+              <div class="stat-label">Projects Built</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">15+</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="project-card">
-            <h3>Project Three</h3>
-            <p>A beginner JavaScript project.</p>
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">My Expertise</p>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-desc">Here are the tools and technologies I use to bring ideas to life.</p>
+      </div>
+      <div class="skills-grid">
+        <!-- Skill Card 1 -->
+        <div class="skill-card reveal">
+          <div class="skill-icon">🎨</div>
+          <h3>Frontend Development</h3>
+          <p>Building responsive, performant, and accessible user interfaces with modern frameworks.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">Tailwind</span>
+          </div>
         </div>
-    </section>
+        <!-- Skill Card 2 -->
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-icon">⚙️</div>
+          <h3>Backend Development</h3>
+          <p>Designing robust APIs and server-side architectures that scale efficiently.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Express</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">GraphQL</span>
+          </div>
+        </div>
+        <!-- Skill Card 3 -->
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-icon">🗄️</div>
+          <h3>Database & Cloud</h3>
+          <p>Managing data and deploying applications with modern cloud platforms.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Docker</span>
+          </div>
+        </div>
+        <!-- Skill Card 4 -->
+        <div class="skill-card reveal reveal-delay-3">
+          <div class="skill-icon">🎯</div>
+          <h3>UI/UX Design</h3>
+          <p>Crafting intuitive and delightful user experiences with a design-first approach.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Adobe XD</span>
+            <span class="skill-tag">Prototyping</span>
+            <span class="skill-tag">Wireframing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: yourname@email.com</p>
-        <p>LinkedIn: linkedin.com/in/yourname</p>
-    </section>
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">My Portfolio</p>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-desc">A selection of projects that showcase my skills and passion for development.</p>
+      </div>
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card reveal" data-category="web">
+          <div class="project-image">
+            <div class="project-image-placeholder">🛒</div>
+            <div class="project-overlay">
+              <a href="#" title="Live Demo"><i data-lucide="external-link" style="width:18px;height:18px;"></i></a>
+              <a href="#" title="Source Code"><i data-lucide="github" style="width:18px;height:18px;"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>E-Commerce Platform</h3>
+            <p>A full-featured online store with real-time inventory, secure payments, and an admin dashboard.</p>
+            <div class="project-tech">
+              <span>React</span><span>Node.js</span><span>MongoDB</span><span>Stripe</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card reveal reveal-delay-1" data-category="design">
+          <div class="project-image">
+            <div class="project-image-placeholder">📊</div>
+            <div class="project-overlay">
+              <a href="#" title="Live Demo"><i data-lucide="external-link" style="width:18px;height:18px;"></i></a>
+              <a href="#" title="Source Code"><i data-lucide="github" style="width:18px;height:18px;"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Analytics Dashboard</h3>
+            <p>Interactive data visualization dashboard with real-time charts, filters, and custom reporting.</p>
+            <div class="project-tech">
+              <span>Vue.js</span><span>D3.js</span><span>Python</span><span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card reveal reveal-delay-2" data-category="mobile">
+          <div class="project-image">
+            <div class="project-image-placeholder">💬</div>
+            <div class="project-overlay">
+              <a href="#" title="Live Demo"><i data-lucide="external-link" style="width:18px;height:18px;"></i></a>
+              <a href="#" title="Source Code"><i data-lucide="github" style="width:18px;height:18px;"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Social Chat App</h3>
+            <p>Real-time messaging application with group chats, media sharing, and end-to-end encryption.</p>
+            <div class="project-tech">
+              <span>React Native</span><span>Firebase</span><span>Socket.io</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="project-card reveal reveal-delay-3" data-category="web">
+          <div class="project-image">
+            <div class="project-image-placeholder">🤖</div>
+            <div class="project-overlay">
+              <a href="#" title="Live Demo"><i data-lucide="external-link" style="width:18px;height:18px;"></i></a>
+              <a href="#" title="Source Code"><i data-lucide="github" style="width:18px;height:18px;"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>AI Content Generator</h3>
+            <p>AI-powered writing assistant that generates blog posts, social media content, and marketing copy.</p>
+            <div class="project-tech">
+              <span>Next.js</span><span>OpenAI</span><span>Tailwind</span><span>Prisma</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="project-card reveal" data-category="design">
+          <div class="project-image">
+            <div class="project-image-placeholder">🎵</div>
+            <div class="project-overlay">
+              <a href="#" title="Live Demo"><i data-lucide="external-link" style="width:18px;height:18px;"></i></a>
+              <a href="#" title="Source Code"><i data-lucide="github" style="width:18px;height:18px;"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Music Streaming UI</h3>
+            <p>A sleek, modern music player interface with playlist management and audio visualizer.</p>
+            <div class="project-tech">
+              <span>React</span><span>Web Audio API</span><span>Framer Motion</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 6 -->
+        <div class="project-card reveal reveal-delay-1" data-category="mobile">
+          <div class="project-image">
+            <div class="project-image-placeholder">🏋️</div>
+            <div class="project-overlay">
+              <a href="#" title="Live Demo"><i data-lucide="external-link" style="width:18px;height:18px;"></i></a>
+              <a href="#" title="Source Code"><i data-lucide="github" style="width:18px;height:18px;"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Fitness Tracker</h3>
+            <p>Health and fitness tracking app with workout plans, progress charts, and meal planning.</p>
+            <div class="project-tech">
+              <span>Flutter</span><span>Firebase</span><span>Charts</span><span>REST API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Your Name. All Rights Reserved.</p>
-    </footer>
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Get In Touch</p>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-desc">Have a project in mind or want to collaborate? I'd love to hear from you.</p>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info reveal">
+          <h3>Let's Talk</h3>
+          <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of something amazing.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i data-lucide="mail" style="width:20px;height:20px;color:var(--accent-cyan);"></i>
+              </div>
+              <div class="contact-item-text">
+                <span>Email</span>
+                <p>chakri@example.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i data-lucide="map-pin" style="width:20px;height:20px;color:var(--accent-cyan);"></i>
+              </div>
+              <div class="contact-item-text">
+                <span>Location</span>
+                <p>India</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i data-lucide="phone" style="width:20px;height:20px;color:var(--accent-cyan);"></i>
+              </div>
+              <div class="contact-item-text">
+                <span>Phone</span>
+                <p>+91 XXXXX XXXXX</p>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link" title="GitHub">
+              <i data-lucide="github" style="width:20px;height:20px;"></i>
+            </a>
+            <a href="#" class="social-link" title="LinkedIn">
+              <i data-lucide="linkedin" style="width:20px;height:20px;"></i>
+            </a>
+            <a href="#" class="social-link" title="Twitter">
+              <i data-lucide="twitter" style="width:20px;height:20px;"></i>
+            </a>
+            <a href="#" class="social-link" title="Instagram">
+              <i data-lucide="instagram" style="width:20px;height:20px;"></i>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit">
+            Send Message <i data-lucide="send" style="width:18px;height:18px;"></i>
+          </button>
+          <div class="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
 
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2026 Chakri. Crafted with ❤️</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Initialize Lucide icons after DOM loads
+    lucide.createIcons();
+  </script>
 </body>
 </html>
